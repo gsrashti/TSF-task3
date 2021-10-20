@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+    font-size: 15px;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#click {
+    display: none;
+}
+
+body {
+    min-width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: whitesmoke;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 14vh;
+    max-width: 100%;
+}
+
+div .pics ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+div .pics ul li {
+    margin: 0.5rem;
+}
+
+div .pics ul li a {
+    font-size: 1.5rem;
+    color: #2a9d8f;
+}
+
+i:hover {
+    color: #495057;
+}
+
+.navs ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+div .navs {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.navs ul li {
+    margin: 0 2rem;
+}
+
+.navs ul li a {
+    font-weight: bold;
+}
+
+header .heading h1 span {
+    color: #2a9d8f;
+    font-size: 3rem;
+}
+
+header .heading h1 {
+    color: #495057;
+    margin: 0 -10rem;
+}
+
+.link:hover {
+    background-color: #2a9d8f;
+}
+
+div .background {
+    background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.52), rgba(46, 46, 46, 0.73)), url('im5.jpeg');
+    height: 38rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+}
+
+div .background h1 {
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+div .background h1 span {
+    color: #2a9d8f;
+    font-size: 2rem;
+}
+
+div .head2 {
+    padding: 10rem 13rem;
+}
+
+div .aboutus h1 {
+    color: #2a9d8f;
+    font-size: 2rem;
+}
+
+div .secosec {
+    height: 70vh;
+    display: flex;
+    margin: 4rem 8rem;
+}
+
+div .aboutus p {
+    height: 7rem;
+    width: 70%;
+    font-size: large;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: -9rem 12rem;
+}
+
+.explore button {
+    border: 3px solid #495057;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 7rem;
+    margin: 0 1rem;
+    color: whitesmoke;
+    background-color: #2a9d8f;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+div .aboutus p {
+    text-align: left;
+}
+
+div .pic img {
+    height: 20rem;
+    width: 30rem;
+    padding-left: 2rem;
+    border-left: 5px solid #2a9d8f;
+}
+
+div .thrpart {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div .contact {
+    height: 100vh;
+    background-color: #495057;
+}
+
+div h3 {
+    color: #2a9d8f;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+input[type=submit] {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #495057;
+}
+
+.contain {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10% 20%;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #2a9d8f;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #495057;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+footer .foot {
+    height: 10vh;
+    width: 100%;
+    background-color: #2a9d8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .foot h3 {
+    color: #495057;
+    font-size: 20px;
+}
+
+.overlay-slide {
+    position: relative;
+    box-sizing: border-box;
+    height: 280px;
+    width: 220px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.overlay-slide img {
+    width: 100%;
+    height: 20rem;
+}
+
+.overlay-slide:hover div {
+    transform: translate(0, 0);
+    transition: all 0.4s ease-in;
+}
+
+.overlay-slide div {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    transform: translate(100%, 100%);
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.overlay-slide h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #2a9d8f;
+}
+
+div .h1 h1 {
+    text-align: center;
+    color: #2a9d8f;
+    position: relative;
+    bottom: 50px;
+    font-size: 5rem;
+    margin-top: -5rem;
+}
+
+div .menu-btn i {
+    color: #2a9d8f;
+    position: relative;
+    left: 9rem;
+    font-size: 25px;
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    div .menu-btn i {
+        display: block;
+    }
+    div .navbar ul {
+        position: fixed;
+        top: 6rem;
+        right: -100%;
+        background: whitesmoke;
+        height: 100%;
+        display: block;
+        transition: all 0.4s ease;
+        margin: 0;
+        width: 80%;
+        text-align: center;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        height: 15%;
+        width: 100%;
+    }
+    #click {
+        display: none;
+    }
+    #click:checked~ul {
+        right: 0%;
+    }
+    div .pics ul li a {
+        display: inline;
+    }
+    div .navbar ul li a {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    div .navbar ul li a:hover {
+        background-color: teal;
+        color: whitesmoke;
+        padding: 20px;
+    }
+    div .logo i {
+        display: visible;
+    }
+    header .heading h1 {
+        font-size: 2rem;
+        margin-left: -60px;
+    }
+    header .heading h1 span {
+        font-size: 4rem;
+    }
+    div .background h1 {
+        padding: 114px 6%;
+        font-size: 45px;
+    }
+    .explore button {
+        position: relative;
+        right: 171px;
+        top: 67px;
+    }
+    div .background {
+        min-height: 70vh;
+    }
+    div .background h1 {
+        padding-top: 13rem;
+    }
+    div .secosec {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    div .pic img {
+        width: 20rem;
+        height: 22rem;
+        margin: 20px;
+    }
+    div .aboutus h1 {
+        text-align: center;
+    }
+    div .aboutus p {
+        min-width: 20rem;
+        text-align: center;
+        font-weight: 5rem;
+    }
+    div .h1 h1 {
+        margin-top: 22rem;
+        font-size: 4rem;
+    }
+    div .thrpart {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    div .overlay-slide {
+        width: 30rem;
+        height: 30rem;
+        margin: 0 2rem;
+    }
+    div .overlay-slide img {
+        height: 26rem;
+        margin: 59px 0;
+    }
+    div .contain {
+        width: 72%;
+        margin: 30px;
+    }
+}
